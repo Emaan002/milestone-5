@@ -1,0 +1,182 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-container {
+  height: 100%;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(211, 214, 213, 0.418);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(33, 34, 34, 0.4);
+}
+
+h1 {
+  margin: 0;
+  padding: 3px;
+}
+
+.second {
+  color: rgb(31, 207, 238);
+}
+
+.same {
+  margin-left: 0.1px;
+  margin-top: 5px;
+  border: none;
+  padding: 3px;
+}
+
+.job{
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+#job-title{
+    padding: 9px;
+    margin-left: 18px;
+    border-radius: 4px;
+
+}
+
+.header-container {
+  display: flex;
+}
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#education {
+    padding: 10px;
+}
+
+#toggleButton {
+  margin-left: 25px;
+  background-color: rgb(31, 207, 238);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+  background-color:  #0056b3;
+}
+
+#toggleButton.active {
+  background-color: rgb(6, 157, 184);
+}
+
+/* Section Styling */
+#skillsSection {
+  margin-top: 20px;
+  margin-left: 25px;
+  padding: 10px;
+  padding-right: 10px;
+  border: 2px solid rgb(149, 165, 168);
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  display: none;
+}
+
+.skill  {
+  margin-top: 0;
+}
+
+.btn{
+  margin-left: 23px;
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(31, 207, 238);
+  color: white;
+  padding: 10px 9px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color:  #0056b3;
+}
+
+#resumeOutput{
+  height: 430px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(211, 214, 213, 0.418);
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(33, 34, 34, 0.4);
+}
+
+#resumeoutput h2{
+   color: black;
+}
+
+#saveResumeBtn{
+    margin-left: 25px;
+    background-color: rgb(31, 207, 238);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#saveResumeBtn:hover{
+  background-color:  #0056b3;
+
+}
+
+#editResumeBtn{
+    margin-left: 25px;
+    background-color: rgb(31, 207, 238);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+#editResumeBtn:hover{
+    background-color:  #0056b3;}
+
+@media print {
+  .btn {
+    display: none;
+  }
+};

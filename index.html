@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="header-container">
+        <h1 class="first">MY</h1>
+        <h1 class="second">Resume</h1>
+      </div>
+      <h2>Personal info</h2>
+      <label for="job-title" class="job">Wanted job title:</label><br />
+      <input type="text" class="same" id="job-title" name="job-title" />
+      <div id="form-container">
+        <div class="form-group">
+          <label for="name">first Name:</label>
+          <input type="text" id="first-name" name="name" />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" /><br />
+
+          <label for="education">Education Level:</label>
+          <select id="education" name="education">
+            <option value="">--Select Education Level--</option>
+            <option value="high-school">High School</option>
+            <option value="associate">Intermidiate</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" />
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" />
+
+          <label for="country">Country:</label>
+          <input type="text" name="country" id="country" /><br />
+
+          <label for="experience" class="epx">Share Your experience:</label>
+          <input type="text" name="experience" id="experience" />
+        </div>
+      </div>
+      <div class="skills-container">
+        <button id="toggleButton">Show Skills</button>
+
+        <!-- Section to Toggle -->
+        <section id="skillsSection">
+          <h2 class="skill">Skills</h2>
+          <ul>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+          </ul>
+        </section>
+        <br />
+        <button type="submit" class="btn">Generate Resume</button>
+      </div>
+      <button id="downloadPDF" class="btn">Download as PDF</button>
+    </div>
+    <div id="resumeOutput"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
